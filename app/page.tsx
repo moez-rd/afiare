@@ -1,113 +1,143 @@
 import Image from "next/image";
+import SolutionCard from "./_ui/molecules/solution/card";
+import {
+  ChartLineUp,
+  ChartScatter,
+  Clock,
+  Lamp,
+  PlusMinus,
+} from "@phosphor-icons/react/dist/ssr";
 
-export default function Home() {
+export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <section className="container mt-40">
+        <div className="max-w-3xl">
+          <h1 className="text-5xl font-bold">
+            <span className="text-teal-700">
+              Optimalkan proses bisnis dan layanan Anda dengan solusi AI dari
+              perusahaan
+            </span>
+            &nbsp;
+            <span className="text-green-500">IsysRG terbaik Indonesia:v</span>
+          </h1>
+          <p className="text-lg mt-10">
+            <span className="font-bold">
+              Solusi Terpadu Kecerdasan Buatan -
+            </span>
+            &nbsp;
+            <span>
+              Natural Language Processing (NLP), mulai dari analisis teks dan
+              conversational AI hingga pengenalan suara dalam Bahasa Indonesia
+            </span>
+          </p>
+          <button className="bg-green-500 text-white py-2.5 px-6 rounded uppercase font-medium mt-20">
+            Mari bicarakan
+          </button>
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
+      </section>
+      <section className="container mt-40 flex flex-col items-center">
+        <h2 className="text-5xl text-center font-bold text-teal-700">
+          Solusi Kami
+        </h2>
+        <p className="text-center mt-10 max-w-3xl">
+          Kami mengembangkan produk yang memiliki inovasi bernilai tinggi
+          menggunakan teknik <span className="italic">Deep learning</span> untuk
+          memproses data Anda menjadi wawasan dan meningkatkan nilai bisnis Anda
+        </p>
+        <ul className="grid grid-cols-3 gap-8 mt-8">
+          <SolutionCard />
+          <SolutionCard />
+          <SolutionCard />
+          <SolutionCard />
+          <SolutionCard />
+          <SolutionCard />
+          <SolutionCard />
+          <SolutionCard />
+          <SolutionCard />
+        </ul>
+        <div className="flex flex-row items-center gap-x-10 mt-20">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=ARVA-_YGrcVUgbj1"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            className="aspect-video rounded-lg"
+          ></iframe>
+          <p className="text-lg">
+            Tingkatkan performa bisnis serta pelayanan dan pengalaman pelanggan
+            Anda ke tahap yang lebih tinggi melalui implementasi kecerdasan
+            artifisial
           </p>
-        </a>
+        </div>
+      </section>
+      <section className="container mt-40 flex flex-col">
+        <h2 className="text-5xl font-bold text-teal-700">Klien Kami</h2>
+      </section>
+      <section className="container mt-40 flex flex-col">
+        <h2 className="text-5xl font-bold text-teal-700">Manfaat</h2>
+        <div className="mt-10 grid grid-cols-2 gap-x-10">
+          <Image
+            src="/images/dummies/randomsekali.jpg"
+            alt=""
+            width={800}
+            height={800}
+            className="object-cover rounded-lg"
+          />
+          <ul className="flex flex-col gap-y-4">
+            <li className="flex flex-row items-center text-lg gap-x-4">
+              <div>
+                <ChartScatter
+                  weight="duotone"
+                  className="text-[4em] text-green-500"
+                />
+              </div>
+              <span>Analisis teks dalam skala besar secara cepat</span>
+            </li>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+            <li className="flex flex-row items-center text-lg gap-x-4">
+              <div>
+                <Clock weight="duotone" className="text-[4em] text-green-500" />
+              </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+              <span>Menghemat lebih dari 50% waktu dan biaya Anda</span>
+            </li>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+            <li className="flex flex-row items-center text-lg gap-x-4">
+              <div>
+                <PlusMinus
+                  weight="duotone"
+                  className="text-[4em] text-green-500"
+                />
+              </div>
+              <span>Mampu melayani 24/7</span>
+            </li>
+
+            <li className="flex flex-row items-center text-lg gap-x-4">
+              <div>
+                <ChartLineUp
+                  weight="duotone"
+                  className="text-[4em] text-green-500"
+                />
+              </div>
+              <span>Meningkatkan produktivitas karyawan sampai dengan 80%</span>
+            </li>
+
+            <li className="flex flex-row items-center text-lg gap-x-4">
+              <div>
+                <Lamp weight="duotone" className="text-[4em] text-green-500" />
+              </div>
+              <span>
+                Dapatkan wawasan secara langsung untuk pembuatan keputusan
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </>
   );
 }
