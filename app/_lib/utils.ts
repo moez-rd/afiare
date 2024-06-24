@@ -5,4 +5,5 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export const tw = (strings: TemplateStringsArray, ...values: string[]) => String.raw({ raw: strings }, ...values)
+export const tw = (strings: TemplateStringsArray, ...values: any[]) =>
+  String.raw({ raw: strings }, ...values);
