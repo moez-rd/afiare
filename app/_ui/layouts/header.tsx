@@ -32,7 +32,7 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "hover:bg-secondary-300 hover:text-secondary-900 focus:bg-secondary-300 focus:text-secondary-900 block select-none space-y-1 rounded-md p-3 leading-none text-gray-800 no-underline outline-none transition-colors",
+            "block select-none space-y-1 rounded-md p-3 leading-none text-gray-800 no-underline outline-none transition-colors hover:bg-secondary-300 hover:text-secondary-900 focus:bg-secondary-300 focus:text-secondary-900",
             className,
           )}
           {...props}
@@ -139,7 +139,7 @@ export default function Header() {
         <div className="container mx-auto flex flex-row items-center justify-between">
           <Link
             href="/"
-            className="text-secondary-500 flex flex-row items-end gap-x-2"
+            className="flex flex-row items-end gap-x-2 text-secondary-500"
           >
             <Image src="/logo.png" alt="" width={32} height={32} />
           </Link>

@@ -11,13 +11,7 @@ import {
   PlusMinus,
 } from "@phosphor-icons/react/dist/ssr";
 import { Button } from "@/app/_ui/atoms/button";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "./_ui/atoms/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "./_ui/atoms/carousel";
 import Link from "next/link";
 import Autoplay from "embla-carousel-autoplay";
 import { solutions } from "./_lib/dummies";
@@ -25,7 +19,7 @@ import { solutions } from "./_lib/dummies";
 export default function Page() {
   return (
     <>
-      <section className="container mt-32">
+      <section className="container mt-20 md:mt-32">
         <div className="max-w-2xl pt-10 md:pt-20">
           <h1 className="text-xl font-bold leading-tight md:text-4xl">
             <span className="text-primary">
@@ -98,7 +92,7 @@ export default function Page() {
           <CarouselContent>
             {Array.from({ length: 20 }).map((_, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/6">
-                <div className="m-1 flex flex-row items-center justify-center rounded-lg border border-teal-600 p-8">
+                <div className="m-1 flex flex-row items-center justify-center rounded-lg border border-primary p-8">
                   <Image
                     src="/images/dummies/logoipsum.svg"
                     alt=""
@@ -128,7 +122,7 @@ export default function Page() {
               <div>
                 <ChartScatter
                   weight="duotone"
-                  className="text-secondary-500 text-[2em] md:text-[3em]"
+                  className="text-[2em] text-secondary-500 md:text-[3em]"
                 />
               </div>
               <span>Analisis teks dalam skala besar secara cepat</span>
@@ -138,7 +132,7 @@ export default function Page() {
               <div>
                 <Clock
                   weight="duotone"
-                  className="text-secondary-500 text-[2em] md:text-[3em]"
+                  className="text-[2em] text-secondary-500 md:text-[3em]"
                 />
               </div>
 
@@ -149,7 +143,7 @@ export default function Page() {
               <div>
                 <PlusMinus
                   weight="duotone"
-                  className="text-secondary-500 text-[2em] md:text-[3em]"
+                  className="text-[2em] text-secondary-500 md:text-[3em]"
                 />
               </div>
               <span>Mampu melayani 24/7</span>
@@ -159,7 +153,7 @@ export default function Page() {
               <div>
                 <ChartLineUp
                   weight="duotone"
-                  className="text-secondary-500 text-[2em] md:text-[3em]"
+                  className="text-[2em] text-secondary-500 md:text-[3em]"
                 />
               </div>
               <span>Meningkatkan produktivitas karyawan sampai dengan 80%</span>
@@ -169,7 +163,7 @@ export default function Page() {
               <div>
                 <Lamp
                   weight="duotone"
-                  className="text-secondary-500 text-[2em] md:text-[3em]"
+                  className="text-[2em] text-secondary-500 md:text-[3em]"
                 />
               </div>
               <span>
@@ -180,7 +174,7 @@ export default function Page() {
         </div>
       </section>
       <section className="container mt-20 md:mt-32">
-        <div className="from-secondary-300 to-secondary-400 flex flex-col rounded-lg bg-gradient-to-b px-10 py-12">
+        <div className="flex flex-col rounded-lg bg-gradient-to-b from-secondary-300 to-secondary-400 px-10 py-12">
           <div className="max-w-2xl">
             <h2 className="text-center text-lg font-bold leading-tight text-primary md:text-left md:text-2xl">
               Tingkatkan performa, pelayanan bisnis serta pengalaman pelanggan
@@ -208,7 +202,7 @@ export default function Page() {
             {Array.from({ length: 20 }).map((_, index) => (
               <CarouselItem key={index} className="md:basis-1 lg:basis-1/2">
                 <div className="m-1 flex flex-col rounded-lg border border-primary p-8">
-                  <h3 className="text-secondary-500 text-lg font-bold md:text-2xl">
+                  <h3 className="text-lg font-bold text-secondary-500 md:text-2xl">
                     Rahmat Hidayat
                   </h3>
                   <p className="text-base md:text-lg">
@@ -252,7 +246,7 @@ export default function Page() {
               </p>
               <Link
                 href="#"
-                className="text-secondary-500 mt-4 flex flex-row items-center gap-x-1 text-sm md:text-base"
+                className="mt-4 flex flex-row items-center gap-x-1 text-sm text-secondary-500 md:text-base"
               >
                 <span>Baca Selengkapnya</span>
                 <ArrowRight />
