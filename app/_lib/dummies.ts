@@ -7,7 +7,7 @@ export const solutions: Solution[] = [
       "Hasilkan suara voice-over manusia alami dari teks secara instan dalam Bahasa Indonesia",
     href: "#",
     image: {
-      src: "/images/dummies/randomsekali.jpg",
+      src: "/images/cardiacare.png",
       alt: "Random Sekali",
     },
   },
@@ -17,7 +17,7 @@ export const solutions: Solution[] = [
       "Hasilkan suara voice-over manusia alami dari teks secara instan dalam Bahasa Indonesia",
     href: "#",
     image: {
-      src: "/images/dummies/randomsekali.jpg",
+      src: "/images/teleotiva.png",
       alt: "Random Sekali",
     },
   },
