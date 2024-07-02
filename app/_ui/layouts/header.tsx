@@ -32,7 +32,7 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none text-gray-800 no-underline outline-none transition-colors hover:bg-green-300 hover:text-green-900 focus:bg-green-300 focus:text-green-900",
+            "hover:bg-secondary-300 hover:text-secondary-900 focus:bg-secondary-300 focus:text-secondary-900 block select-none space-y-1 rounded-md p-3 leading-none text-gray-800 no-underline outline-none transition-colors",
             className,
           )}
           {...props}
@@ -135,13 +135,13 @@ export default function Header() {
 
   return (
     <header className="relative">
-      <div className="fixed z-20 flex h-20 w-full items-center bg-white">
+      <div className="fixed z-20 flex h-16 w-full items-center bg-white">
         <div className="container mx-auto flex flex-row items-center justify-between">
           <Link
             href="/"
-            className="flex flex-row items-end gap-x-2 text-green-500"
+            className="text-secondary-500 flex flex-row items-end gap-x-2"
           >
-            <Image src="/logo.png" alt="" width={40} height={40} />
+            <Image src="/logo.png" alt="" width={32} height={32} />
           </Link>
           <NavigationMenu className="hidden text-gray-800 md:flex md:flex-row md:items-center">
             <NavigationMenuList>
@@ -165,9 +165,7 @@ export default function Header() {
         )}
       >
         <div className="container flex h-16 flex-row items-center justify-between text-gray-700">
-          <p className="flex flex-row gap-x-1 text-sm font-bold text-green-500 md:text-base">
-            Afiare
-          </p>
+          <Image src="/logo.png" alt="" width={32} height={32} />
           <button onClick={handleToggleMobileNav}>
             <X size="1.8em" />
           </button>

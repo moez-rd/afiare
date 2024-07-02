@@ -5,19 +5,21 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="mt-10 border-t-8 border-green-500 text-white">
+    <footer className="mt-6 text-white md:mt-10">
       <div className="bg-stone-800 py-8">
-        <div className="container flex flex-row gap-x-20">
+        <div className="container flex flex-col gap-x-20 md:flex-row">
           <div className="max-w-2xl">
-            <div className="flex flex-row items-end gap-x-2 text-green-500">
+            <div className="text-secondary-500 flex flex-row items-end gap-x-2">
               <Image src="/logo.png" alt="" width={60} height={60} />
             </div>
           </div>
-          <div className="flex w-full flex-row justify-between">
+          <div className="flex w-full flex-col gap-y-6 md:flex-row md:justify-between md:gap-y-0">
             {config.footer_links.map((links) => (
               <div key={links.category} className="flex flex-col">
-                <h5 className="text-lg font-bold">{links.category}</h5>
-                <ul className="mt-4 flex flex-col gap-y-2">
+                <h5 className="text-base font-bold md:text-lg">
+                  {links.category}
+                </h5>
+                <ul className="mt-4 flex flex-col gap-y-2 text-sm md:text-base">
                   {links.links.map((link, key) => (
                     <li key={key}>
                       {"name" in link && (
@@ -27,7 +29,7 @@ export default function Footer() {
                       {"icon" in link && (
                         <Link href={link.href}>
                           <link.icon
-                            className="text-[1.2em] text-green-500"
+                            className="text-secondary-500 text-[1.2em]"
                             weight="fill"
                           />
                         </Link>
@@ -41,7 +43,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="bg-stone-900 py-4">
-        <div className="container flex flex-row items-center justify-between">
+        <div className="container flex flex-col items-center justify-between text-sm md:flex-row md:text-base">
           <p>© {new Date().getFullYear()} Afiare. All rights reserved</p>
           <div className="flex flex-row items-center gap-x-1">
             <Link href="#">Syarat dan Ketentuan</Link>
