@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "../../atoms/button";
 
 export default function SolutionCard() {
   return (
@@ -17,12 +18,7 @@ export default function SolutionCard() {
           Hasilkan suara voice-over manusia alami dari teks secara instan dalam
           Bahasa Indonesia
         </p>
-        <Link
-          href="#"
-          className="mt-4 rounded bg-green-500 px-6 py-2.5 font-medium uppercase text-white"
-        >
-          Pelajari selengkapnya
-        </Link>
+        <Button className="mt-4">Pelajari selengkapnya</Button>
       </div>
     </li>
   );

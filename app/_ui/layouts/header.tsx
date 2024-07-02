@@ -141,10 +141,7 @@ export default function Header() {
             href="/"
             className="flex flex-row items-end gap-x-2 text-green-500"
           >
-            <Image src="/logo.svg" alt="" width={40} height={40} />
-            <p className="flex flex-row gap-x-1 text-sm font-bold md:text-base">
-              Afiare
-            </p>
+            <Image src="/logo.png" alt="" width={40} height={40} />
           </Link>
           <NavigationMenu className="hidden text-gray-800 md:flex md:flex-row md:items-center">
             <NavigationMenuList>

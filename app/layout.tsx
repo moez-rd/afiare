@@ -19,7 +19,10 @@ export default function RootLayout({ children }: Readonly<Props>) {
   return (
     <html lang={config.metadata.lang}>
       <body
-        className={cn(poppins.className, "flex min-h-dvh flex-col bg-white")}
+        className={cn(
+          poppins.className,
+          "flex min-h-dvh flex-col bg-white antialiased",
+        )}
       >
         <Header />
         <main className="mb-40 grow">{children}</main>

@@ -10,10 +10,7 @@ export default function Footer() {
         <div className="container flex flex-row gap-x-20">
           <div className="max-w-2xl">
             <div className="flex flex-row items-end gap-x-2 text-green-500">
-              <Image src="/logo.svg" alt="" width={60} height={60} />
-              <p className="flex flex-row gap-x-1 text-lg font-bold md:text-base">
-                Afiare
-              </p>
+              <Image src="/logo.png" alt="" width={60} height={60} />
             </div>
           </div>
           <div className="flex w-full flex-row justify-between">
